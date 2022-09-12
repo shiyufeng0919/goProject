@@ -6,6 +6,8 @@ import (
 )
 
 /*
+「map是引用类型」
+
 一。map是key-value数据结构，又称为字段或关联数组。类似java编程语言的集合。
 
 二。基本语法： var map 变量名 map[keyType]valueType
@@ -98,7 +100,7 @@ func map12() {
 	//方式三: 声明即赋值
 	//<=> map3:= map[string]string{"key5":"syf"}  //使用类型推导
 	//<=> var map3 = map[string]string{"key5":"syf"}
-	var map3 map[string]string = map[string]string{"key5": "syf", "key6": "smile",}
+	var map3 map[string]string = map[string]string{"key5": "syf", "key6": "smile"}
 	map3["key6"] = "smile"
 	fmt.Printf("\nmap22===map1:%+v,map2:%+v,map3:%+v \n", map1, map2, map3)
 }
